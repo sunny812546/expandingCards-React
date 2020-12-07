@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  width: 90vw;
+}
+.panel {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  cursor: pointer;
+  border-radius: 5px;
+  flex: 0.5;
+  transition: flex 0.7s ease-in;
+  margin: 5px;
+}
+
+.panel p {
+  font-weight: 200;
+  display: flex;
+  /* align-items: flex-end;
+  justify-content: left; */
+  height: inherit;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 4px;
+  opacity: 0;
+}
+.active {
+  flex: 10;
+}
+
+.active p {
+  opacity: 1;
+  transition: opacity 0.4s ease-in 0.4s;
+}
